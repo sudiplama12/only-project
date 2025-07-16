@@ -1,0 +1,61 @@
+.container{
+background: hsla(171, 87%, 67%, 1);
+
+background: radial-gradient(circle, hsla(171, 87%, 67%, 1) 10%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -moz-radial-gradient(circle, hsla(171, 87%, 67%, 1) 10%, hsla(236, 100%, 72%, 1) 100%);
+
+background: -webkit-radial-gradient(circle, hsla(171, 87%, 67%, 1) 10%, hsla(236, 100%, 72%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#61F4DE", endColorstr="#6E78FF", GradientType=1 );
+width: 99vw;
+height: 96vh;
+display: flex;
+justify-content: center;
+align-items: center;
+
+
+}
+.maincontainer {
+    width: 40%;
+    height: 50%;
+    background-color: rgba(0, 128, 0, 0.3); /* semi-transparent green */
+    backdrop-filter: blur(10px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .maincontainer {
+    font-size: 12vw;
+    padding: 1rem;
+  }
+}
+.container span {
+    font-size: 80px;
+    width: 110px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+.container span::after {
+   
+    font-size: 16px;
+    position: absolute;
+    bottom: -20px; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hrs::after{
+    content: 'HOURS';
+}
+#min::after{
+    content: 'MINS';
+}
+#sec::after{
+    content: 'SEC';
+}
