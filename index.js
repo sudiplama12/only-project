@@ -20,13 +20,13 @@ function formvalidation() {
     if (!contact_ko_condition.test(contact)) {
         alert("Please enter a valid contact number (7 to 15 digits).");
         return false;
-    }
+    } k
 
     if (!email_ko_condition.test(email)) {
         alert("Please enter a valid email address.");
         return false;
-    }
-
+    } 
+ 
     if (subject === "") {
         alert("Please enter a subject.");
         return false;

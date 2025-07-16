@@ -9,7 +9,7 @@ if(inputbox.value===" "){
     li.innerHTML=inputbox.value;
     listcontainer.appendChild(li);
     let span=document.createElement("span");
-    span.innerHTML="\u00d7";
+    span.innerHTML="\u00d7";   
     li.appendChild(span);
 
 
