@@ -30,7 +30,7 @@ align-items: center;
 }
 @media (max-width: 600px) {
   .maincontainer {
-    font-size: 12vw;
+    font-size: 13vw;
     padding: 1rem;
   }
 }
