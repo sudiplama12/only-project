@@ -28,12 +28,27 @@ align-items: center;
     font-size: 100px;
     border-radius: 10px;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle, hsla(171, 87%, 67%, 1) 10%, hsla(236, 100%, 72%, 1) 100%);
+  }
+
   .maincontainer {
-    font-size: 13vw;
-    padding: 1rem;
+    
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+       
+    color: green;
   }
 }
+
+
 .container span {
     font-size: 80px;
     width: 110px;

@@ -1,7 +1,7 @@
 setInterval(() => {
-    const currenttime = new Date();
+  const currenttime = new Date();
 
-    hrs.innerHTML = String(currenttime.getHours()).padStart(2, '0');
-    min.innerHTML = String(currenttime.getMinutes()).padStart(2, '0');
-    sec.innerHTML = String(currenttime.getSeconds()).padStart(2, '0');
+  document.getElementById("hrs").innerHTML = String(currenttime.getHours()).padStart(2, '0');
+  document.getElementById("min").innerHTML = String(currenttime.getMinutes()).padStart(2, '0');
+  document.getElementById("sec").innerHTML = String(currenttime.getSeconds()).padStart(2, '0');
 }, 1000);
